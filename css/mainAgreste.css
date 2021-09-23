@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'heartlandregular';
+    src: url('fontes/heartland-webfont.woff2') format('woff2'),
+         url('fontes/heartland-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'heartlandregular';
+    background-color: whitesmoke;
+}
+
+.background {
+    background-color: whitesmoke;
+    z-index: 10;
+}
+
+
+/* Loading */
+
+.whole {
+    /* Essa classe cobre todo o conteúdo do site para fazer o carregamento */
+    display: none;
+}
+
+.carregando {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/loading-hourglass.gif) 50% 50% no-repeat;
+}
+
+
+/* Menu */
+
+header,
+main {
+    transition: 1s;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #4b71a3;
+    height: 8%;
+}
+
+.header1 ul li img {
+    max-width: 93%;
+}
+
+main,
+.content {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.redes-sociais ul li {
+    margin-left: 8.28%;
+    display: inline-block;
+    list-style: none;
+}
+
+.redes-sociais {
+    float: right;
+    width: 29%;
+    height: 100%;
+}
+
+.header2 {
+    width: 100%;
+    padding-top: 1.1%;
+}
+
+.menu-urls {
+    height: 11%;
+    border-bottom: 0.24em solid #896d54;
+}
+
+.menu ul {
+    margin-left: 15%;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 3.7%;
+    color: #edbb43;
+    height: 47%;
+}
+
+.menu ul li:hover {
+    border-bottom: 0.2em solid #edbb43;
+}
+
+.menu ul li a:hover {
+    color: #edbb43;
+}
+
+.selected {
+    color: #110a08!important;
+    border-bottom: 0.16em solid #110a08;
+}
+
+.selected:hover {
+    color: #896d54!important;
+    border-bottom: none;
+}
+
+.menu ul li a {
+    color: #a09694;
+    text-decoration: none;
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+
+
+.busca {
+    width: 30%;
+    float: right;
+    text-align: center;
+}
+
+.busca input {
+    background-image: url("../img/icone-search.png");
+    background-repeat: no-repeat;
+    background-position: 96%;
+    height: 45%;
+    margin-top: 1%;
+    margin-right: 15%;
+    padding: 4%;
+    width: 43%;
+    border: 0.3em solid #a09694;
+    border-radius: 2.5em;
+}
+
+
+/* Corpo do site */
+
+.corpo {
+    width: 80%;
+    border: 0.15em solid whitesmoke;
+    border-bottom: none;
+    border-top: none;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: whitesmoke;
+}
+#img1{
+    width: 10%;
+    height: 10%;
+    margin-bottom: 100%;
+}
+.corpo h1,
+.corpo p {
+    padding: 0 1% 0 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.col-100 {
+    background-color: whitesmoke;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.col-100 p {
+    text-align: justify;
+}
+
+.texto-destaque {
+    text-align: center;
+}
+
+.texto-destaque strong {
+    color: #89807e;
+}
+
+.texto-destaque h1 {
+    text-transform: uppercase;
+    font-size: 250%;
+    color: #a09694;
+}
+
+.texto-destaque p {
+    font-size: 125%;
+    color: #a29285;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.col-4 {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.col-4 img {
+    max-height: 10%;
+    max-width: 42%;
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 3.5%;
+    vertical-align: middle;
+}
+
+.col-4 img:hover {
+    margin-top: 2.8%!important;
+    position: relative!important;
+}
+
+.bloco-logos {
+    height: 24.5%;
+}
+
+.bloco-logos img {
+    margin-bottom: 1.5em;
+}
+
+
+/* Rodapé */
+
+.footer h4 {
+    color: #edbb43;
+    text-align: left;
+}
+
+.footer h3 {
+    color: #edbb43;
+    text-align: left;
+}
+
+.footer {
+    background-color: #4b71a3;
+    padding-top: 3%;
+}
+
+.footer h3,
+.footer h4,
+.footer p {
+    margin: 2.3% 0 0 8%;
+    ;
+}
+
+.footer-2 {
+    background-color: #4b71a3;
+    height: 9%;
+}
+
+.footer p {
+    color: #7a6262;
+    width: 90%;
+    text-align: left;
+}
+
+.footer-2 p {
+    color: #d1aa4d;
+    padding: 0.8%;
+}
+
+.local:before,
+.emailico:before,
+.telefoneico:before {
+    content: '';
+    width: 4.5%;
+    height: 3%;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    padding-left: 1%;
+}
+
+.local:before {
+    background-image: url('../img/local.png');
+}
+
+.emailico:before {
+    background-image: url('../img/emailico.png');
+}
+
+.telefoneico:before {
+    background-image: url('../img/telefoneico.png');
+}
